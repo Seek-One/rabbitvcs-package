@@ -1,0 +1,7 @@
+Package: rabbitvcs
+Version: 0.18
+Maintainer: Eric Beuque
+Architecture: all
+Description: rabbitvcs
+Depends: python3-svn, python3-dulwich, python3-tk
+Conflicts: rabbitvcs-core

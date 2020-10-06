@@ -1,0 +1,3 @@
+[submodule "rabbitvcs-git"]
+	path = rabbitvcs-git
+	url = https://github.com/rabbitvcs/rabbitvcs
