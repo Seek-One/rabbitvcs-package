@@ -5,6 +5,7 @@ PKG_DIR=./rabbitvcs-nemo-pkg
 PKG_PREFIX=../rabbitvcs-nemo-pkg
 PKG_PREFIX_SAFE=\\.\\.\\/rabbitvcs\\-nemo\\-pkg
 
+rm -rf ${PKG_DIR}
 cd ${SRC_DIR}
 python3 setup.py install --install-layout=deb --prefix=${PKG_PREFIX}/usr
 cd ..
