@@ -1,4 +1,2 @@
-rabbitvcs-nemo/rabbitvcs-nemo-python*
-rabbitvcs-nemo/*.deb
-rabbitvcs-nemo-autonomous/rabbitvcs-nemo-python*
-rabbitvcs-nemo-autonomous/*.deb
+rabbitvcs-nemo-python*
+*.deb
