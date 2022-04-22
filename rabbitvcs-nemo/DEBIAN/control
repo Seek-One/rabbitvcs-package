@@ -1,0 +1,6 @@
+Package: rabbitvcs-nemo
+Version: 0.18
+Maintainer: Eric Beuque
+Architecture: all
+Description: RabbitVCS with Nemo integration
+Depends: rabbitvcs-core
