@@ -2,9 +2,10 @@
 
 PYTHON=python2.7
 SRC_DIR=./rabbitvcs-git
-PKG_DIR=./rabbitvcs-nemo-${PYTHON}
-PKG_PREFIX=../rabbitvcs-nemo-${PYTHON}
-PKG_PREFIX_SAFE=\\.\\.\\/rabbitvcs\\-nemo\\-python2\\.7
+PKG_NAME=rabbitvcs-nemo-${PYTHON}-full
+PKG_DIR=./${PKG_NAME}
+PKG_PREFIX=../${PKG_NAME}
+PKG_PREFIX_SAFE=\\.\\.\\/rabbitvcs\\-nemo\\-${PYTHON}-full
 
 # Clear old file
 rm -rf ${PKG_DIR}
@@ -23,6 +24,6 @@ mkdir -p ${PKG_DIR}/usr/share/nemo-python/extensions
 cp RabbitVCS.py ${PKG_DIR}/usr/share/nemo-python/extensions
 
 # Package
-cp -r DEBIAN/ ${PKG_DIR}
+cp -r full-package/DEBIAN/ ${PKG_DIR}
 sed -i "s/python3/python/g" ${PKG_DIR}/DEBIAN/control
 dpkg-deb --build ${PKG_DIR}/
